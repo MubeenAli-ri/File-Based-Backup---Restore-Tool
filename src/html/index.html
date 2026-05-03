@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaultBackup | Secure File Recovery</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">VAULT</div>
+            <ul class="nav-links">
+                <li class="active">Dashboard</li>
+                <li>Schedules</li>
+                <li>Cloud Sync</li>
+                <li>Settings</li>
+            </ul>
+            <div class="storage-info">
+                <p>Storage Used</p>
+                <div class="progress-bar"><div class="fill" style="width: 65%;"></div></div>
+                <span>128GB / 256GB</span>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header>
+                <h1>System Backup</h1>
+                <p class="subtitle">Last backup: Today at 04:20 PM</p>
+            </header>
+
+            <section class="action-cards">
+                <div class="card backup">
+                    <div class="icon">↑</div>
+                    <h2>New Backup</h2>
+                    <p>Compress and encrypt your files to a secure local or cloud destination.</p>
+                    <button class="btn btn-primary">Start Backup</button>
+                </div>
+
+                <div class="card restore">
+                    <div class="icon">↓</div>
+                    <h2>Restore Files</h2>
+                    <p>Select a previous snapshot to recover lost data or roll back changes.</p>
+                    <button class="btn btn-secondary">Open Vault</button>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <h3>Recent Activity</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Filename</th>
+                            <th>Date</th>
+                            <th>Size</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Work_Documents.zip</td>
+                            <td>May 03, 2026</td>
+                            <td>1.2 GB</td>
+                            <td><span class="status success">Success</span></td>
+                        </tr>
+                        <tr>
+                            <td>Project_Alpha_Final</td>
+                            <td>May 01, 2026</td>
+                            <td>450 MB</td>
+                            <td><span class="status success">Success</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
